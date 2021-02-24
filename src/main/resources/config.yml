@@ -1,0 +1,28 @@
+#Prefix of tips
+tipsPrefix: '§b[§9AutoRestart§b]'
+#Tips
+#%Hours% = How many time left (Hour(s))
+#%Minutes% = How many time left (Minute(s))
+#%Seconds% = How many time left (second(s))
+restartTip: '§a服务器将在§d§l %Hours% §a小时§d§l %Minutes% §a分§d§l %Seconds% §a秒后§c§l重启'
+#Restart kick tip
+restartKickTip: '§a服务器正在§c§l重启§a,请稍后尝试加入服务器'
+#Per how many times restart once.(second) (>600)
+restartTime: 7200
+#What times to remind before restarting (second)
+restartReminderTime:
+  - 600
+  - 300
+  - 180
+  - 120
+  - 60
+  - 50
+  - 40
+  - 30
+  - 20
+  - 10
+  - 5
+  - 4
+  - 3
+  - 2
+  - 1

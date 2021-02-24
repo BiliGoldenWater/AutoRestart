@@ -1,0 +1,37 @@
+name: AutoRestart
+version: ${project.version}
+main: io.github.biligoldenwater.autorestart.AutoRestart
+authors: [Golden_Water]
+description: Timed restart and restart reminder
+commands:
+  autorestart:
+    description: Plugin main command.
+    usage: /autorestart help
+permissions:
+  autorestart.*:
+    default: op
+    description: Plugin main permission.
+    children:
+      autorestart.commands.*:
+        default: op
+        description: Plugin commands permission.
+        children:
+          autorestart.commands.help:
+            default: true
+            description: Show help message.
+          autorestart.commands.reload:
+            default: op
+            description: Reload config.
+          autorestart.commands.restart:
+            default: op
+            description: Restart after given time.
+          autorestart.commands.cancel:
+            default: op
+            description: Cancel restart timer.
+          autorestart.commands.start:
+            default: op
+            description: Start restart timer.
+          autorestart.commands.show:
+            default: op
+            description: Show how many time left.
+
